@@ -1,0 +1,139 @@
+ * { 
+  box-sizing: border-box;
+}
+
+body{  
+  margin: 0;
+  padding: 0;
+  font-family: Poppins;
+  display: flex;  
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+  height: 100vh;
+  background: linear-gradient(170deg, #66a6b9, #6294c4)
+}
+
+h1{
+  font-weight: 700;
+  letter-spacing: -1.5px;
+  margin-bottom: 15px;
+}
+
+h1.title{
+  font-size: 45px;
+  line-height: 45px;
+  margin: 0; 
+  text-shadow: 0 0 10px rgba(16, 64, 74, 0.5);
+  margin: 20px 0 30px;
+  letter-spacing: 0.5;
+} 
+
+p {
+  font-size: 14px ;
+}
+
+button{
+  letter-spacing: 1px;
+  transition: 0.3s ease-in-out;
+  text-transform: capitalize;
+}
+button:hover{
+  letter-spacing: 3px;
+  cursor: pointer;
+}
+button:active{
+  transform: scale(0.95);
+  background-color: #4e8798;
+  color: white;
+}
+button:focus{
+  outline: none;
+}
+
+.Parent{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  flex-direction: row;
+  border-radius: 20px;
+  border-style: none;
+  overflow: hidden;
+  box-shadow: 0px 14px 20px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.25);
+}
+
+.Container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Login-box{
+  background-color: white;
+  padding: 0px 40px 80px 40px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.Login-sign-container, .Register-sign-container{
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.Email-credentials-container, .Password-credentials-container{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+  flex-direction: column;
+  height: 100%;
+  text-align: center;
+}
+.Email-credentials, .Password-credentials{
+  padding: 10px 20px 10px 15px;
+  color: #b1b1b1;
+  background-color: #eeeeee;
+  border-style: none;
+  border-radius: 5px;
+  width: 100%;
+}
+.Email-credentials:focus, .Password-credentials:focus{
+  outline: solid 2px #4e8798; ;
+}
+
+
+.Agreement-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.Agreement-checkbox{
+  accent-color: #4e8798;
+  width: 12px;
+  height: 12px;
+}
+.Agreement-statement{
+  font-size: 12px;
+  text-wrap: nowrap;
+}
+
+.Login-button-container{
+  display: flex;
+  justify-content: center;
+}
+.Login-button{
+  padding: 10px 60px;
+  border-radius: 20px;
+  border-style: none;
+}
+
+.Design{
+  background-image: url(./Assets/Design.gif);
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
